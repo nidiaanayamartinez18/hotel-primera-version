@@ -32,8 +32,8 @@ function Login({ onLoginSuccess }) {
         <div className="logo">
           <img src={logo} alt="Logo" className="logo-img" />
         </div>
-        <h2>Panel de Administración</h2>
-        <p className="subtitle">Gestión integral del Hotel</p>
+        <h2>Bienvenido</h2>
+        <p className="subtitle">Por favor, inicia sesión.</p>
       </div>
 
       {/* Formulario */}

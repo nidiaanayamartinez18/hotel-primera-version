@@ -1,0 +1,114 @@
+.admin-rooms {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  background-color: #e9ecf1;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 370px;
+  align-items: center;
+}
+/* Barra superior */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-filtrar {
+  background-color: #2a2f4f;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 14px;
+
+}
+
+input[type="date"] {
+  padding: 6px 14px;
+  border: none;
+  background-color: #e9ecf1;;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Contenido principal */
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Scroll horizontal */
+.tabla-wrapper {
+  overflow-x: auto;
+}
+
+.tabla-habitaciones {
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.tabla-habitaciones th {
+  text-align: left;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.fecha {
+  font-size: 14px;
+}
+
+.tipo {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.num-habitacion {
+  font-size: 14px;
+  text-align: center;
+  width: 35px;
+}
+
+.status-label {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
+/* Cuadros */
+.cuadro {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  margin: auto;
+}
+
+/* Colores de status */
+.status-rojo { background-color: red; }
+.status-naranja { background-color: orange; }
+.status-celeste { background-color: #17a2b8; } /* cuartos ocupados limpios */
+.status-verde { background-color: #28a745; }   /* cuartos con ajuste */
+.status-azul { background-color: #007bff; }    /* cuartos limpios */
+.status-morado { background-color: #6f42c1; }  /* cuartos bloqueados */
+.status-amarillo { background-color: yellow; } /* habitaciones vendidas */
+.status-rosa { background-color: pink; }       /* salida tarde */
+
+/* Leyenda */
+.leyenda {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.leyenda .cuadro {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
