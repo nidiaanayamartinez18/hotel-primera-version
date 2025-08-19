@@ -2,13 +2,13 @@
   font-size: 24px;
   color: rgb(88, 54, 22);
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 370px;
 }
 .cleaning-report-container {
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #ffffff; /* Fondo blanco para todo */
+  background-color: #e9ecf1; /* Fondo blanco para todo */
   min-height: 100vh;
 }
 
@@ -33,6 +33,7 @@
 .report-info p {
   margin: 0;
   font-size: 16px;
+  margin-bottom: -25px;
 }
 
 .report-info input[type="date"] {
@@ -42,6 +43,7 @@
   border-radius: 6px;
   background-color: #f9f9f9;
   cursor: pointer;
+  margin-bottom: -100px;
 }
 
 .report-body {
@@ -57,7 +59,7 @@
 
 .cleaning-table th,
 .cleaning-table td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #494949;
   padding: 10px;
   text-align: center;
 }
@@ -70,7 +72,7 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  border-radius: 4px;
+  border-radius: 4px solid #494949;
 }
 
 /* Colores de estado */

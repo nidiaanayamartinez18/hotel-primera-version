@@ -1,12 +1,6 @@
-// src/App.jsx
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-
-import Login from "./components/Login";
 import LoginAdmin from "./components/LoginAdmin";
-import Register from "./components/Register";
-import ForgotPassword from "./components/ForgotPassword";
-import Welcome from "./components/Welcome";
 import AdminDashboard from "./components/AdminDashboard";
 
 // Subpáginas del admin
@@ -25,28 +19,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Redirige raíz a login */}
-        <Route path="/" element={<Navigate to="/login" />} />
+        {/* Redirige raíz al login de administrador */}
+        <Route path="/" element={<Navigate to="/admin-login" />} />
 
-        {/* Pantalla de login normal */}
-        <Route path="/login" element={<Login onLoginSuccess={setUser} />} />
-
-        {/* Pantalla de login para administrador */}
+        {/* Pantalla de login única (Administrador) */}
         <Route path="/admin-login" element={<LoginAdmin onLoginSuccess={setUser} />} />
 
-        {/* Pantalla de registro */}
-        <Route path="/register" element={<Register />} />
-
-        {/* Pantalla de recuperación de contraseña */}
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-
-        {/* Pantalla de bienvenida protegida */}
-        <Route
-          path="/welcome"
-          element={
-            user ? <Welcome user={user} onLogout={handleLogout} /> : <Navigate to="/login" />
-          }
-        />
 
         {/* Panel de administrador con subrutas protegidas */}
         <Route
@@ -64,4 +42,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;
